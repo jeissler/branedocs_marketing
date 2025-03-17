@@ -19,6 +19,17 @@
 const { data: page } = await useAsyncData(() =>
   queryCollection("content").path("/whitepaper-extended").first()
 );
+
+useHead({
+  title: "Redefining Useability with Creativity",
+  meta: [
+    {
+      name: "description",
+      content:
+        "branedocs is not just a tool, it's part of a movement toward a more accessable future.",
+    },
+  ],
+});
 </script>
 
 <style lang="pcss" scoped>

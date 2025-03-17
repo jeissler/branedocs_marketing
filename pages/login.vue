@@ -141,6 +141,8 @@
 <script setup>
 import Google from "~/assets/google.svg";
 
+useHead({ title: "Sign In to Account" });
+
 const submitted = ref(false);
 
 function onSubmit(event) {

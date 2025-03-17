@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <div class="mt-3" data-netlify-recaptcha="true" />
+    <div class="mt-3 flex justify-center" data-netlify-recaptcha="true" />
 
     <button
       type="submit"
