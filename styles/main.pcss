@@ -1,0 +1,76 @@
+@layer preflight {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    border-style: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Fira Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+svg.icon,
+svg.icon path {
+  fill: currentColor !important;
+}
+
+/* Background gradients for each section */
+.bg-gradient-1 {
+  background: linear-gradient(135deg, #1e3a8a, #9333ea);
+}
+.bg-gradient-2 {
+  background: linear-gradient(135deg, #2563eb, #ec4899);
+}
+.bg-gradient-3 {
+  background: linear-gradient(135deg, #6d28d9, #db2777);
+}
+.bg-gradient-4 {
+  background: linear-gradient(135deg, #9333ea, #1e40af);
+}
+
+/* Background image */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/logo.svg");
+  background-size: 75px;
+  opacity: 0.2;
+  mix-blend-mode: overlay;
+  transform: skewX(19deg) scale(1.1);
+  background-position: center var(--scroll-position, top);
+}
+
+/* Animated tooltip */
+a .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: 250px;
+  background-color: #7c36d9;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 110%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  transition: opacity 0.3s;
+}
+
+a:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
