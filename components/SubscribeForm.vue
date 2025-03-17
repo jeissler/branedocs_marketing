@@ -1,13 +1,27 @@
 <template>
-  <form v-if="!submitted" class="max-w-md mx-auto" @submit.prevent="submitForm">
+  <form
+    v-if="!submitted"
+    class="max-w-md mx-auto"
+    name="subscribe"
+    data-netlify="true"
+    data-netlify-honeypot="bot"
+    data-netlify-recaptcha="true"
+    @submit.prevent="submitForm"
+  >
+    <p class="hidden">
+      <label>
+        <input name="bot" />
+      </label>
+      <input type="hidden" name="form-name" value="subscribe" />
+    </p>
     <div class="mb-4">
-      <label for="EMAIL" class="block text-sm/6 font-medium">
+      <label for="email" class="block text-sm/6 font-medium">
         Email Address
       </label>
       <input
-        id="EMAIL"
+        id="email"
         type="email"
-        name="EMAIL"
+        name="email"
         required
         class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-purple-600 sm:text-sm/6"
       />
@@ -15,29 +29,31 @@
 
     <div class="flex gap-4">
       <div class="w-1/2">
-        <label for="COMPANY" class="block text-sm/6 font-medium">
+        <label for="company" class="block text-sm/6 font-medium">
           Company
         </label>
         <input
-          id="COMPANY"
+          id="company"
           type="text"
-          name="COMPANY"
+          name="company"
           class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-purple-600 sm:text-sm/6"
         />
       </div>
 
       <div class="w-1/2">
-        <label for="INDUSTRY" class="block text-sm/6 font-medium">
+        <label for="industry" class="block text-sm/6 font-medium">
           Industry
         </label>
         <input
-          id="INDUSTRY"
+          id="industry"
           type="text"
-          name="INDUSTRY"
+          name="industry"
           class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-purple-600 sm:text-sm/6"
         />
       </div>
     </div>
+
+    <div class="mt-3" data-netlify-recaptcha="true" />
 
     <button
       type="submit"
@@ -72,7 +88,21 @@
 <script setup>
 const submitted = ref(false);
 
-function submitForm() {
-  submitted.value = true;
+function submitForm({ target }) {
+  try {
+    const formData = new FormData(target);
+    // encode data for netlify forms
+    const encodedData = new URLSearchParams(formData).toString();
+
+    axios.post("/", encodedData, {
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    });
+
+    submitted.value = true;
+  } catch (error) {
+    console.error("Error:", error);
+
+    alert("There was an error submitting the form. Please try again later.");
+  }
 }
 </script>
