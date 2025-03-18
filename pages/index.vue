@@ -2,7 +2,7 @@
   <main class="text-white">
     <!-- Hero -->
     <section
-      class="bg-gradient-1 h-screen flex flex-col justify-center items-center text-center px-6 pt-[70px]"
+      class="bg-gradient-1 h-screen flex flex-col justify-center items-center text-center px-6 pb-7 pt-[70px]"
     >
       <div class="relative z-10">
         <h1 class="text-5xl font-semibold drop-shadow-lg">
@@ -24,7 +24,7 @@
     <!-- About -->
     <section
       id="about"
-      class="bg-gradient-2 min-h-screen flex flex-col justify-center items-center text-center px-6 pt-[70px]"
+      class="bg-gradient-2 min-h-screen flex flex-col justify-center items-center text-center px-6 pb-7 pt-[70px]"
     >
       <div class="relative z-10">
         <h2 class="text-4xl font-semibold drop-shadow-lg">
@@ -112,7 +112,7 @@
     <!-- Contact -->
     <section
       id="contact"
-      class="bg-gradient-4 min-h-screen flex flex-col justify-center items-center px-6 pt-[70px]"
+      class="bg-gradient-4 min-h-screen flex flex-col justify-center items-center px-6 pb-7 pt-[70px]"
     >
       <div class="relative z-10">
         <h2 class="text-4xl font-semibold drop-shadow-lg text-center">

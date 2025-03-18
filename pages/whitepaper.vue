@@ -8,7 +8,7 @@
       </h1>
     </header>
     <div
-      class="bg-white max-w-5xl mx-auto relative rounded-lg py-10 px-14 mt-10 z-10"
+      class="bg-white max-w-5xl mx-auto relative rounded-lg py-4 md:py-10 px-5 md:px-14 mt-10 z-10"
     >
       <ContentRenderer v-if="page" :value="page" />
     </div>
