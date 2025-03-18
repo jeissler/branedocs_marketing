@@ -61,12 +61,12 @@
       id="features"
       class="bg-gradient-1 min-h-screen flex flex-col justify-center items-center text-center px-6 pt-[70px]"
     >
-      <div class="relative overflow-hidden z-10">
+      <div class="relative overflow-hidden z-10 bottom-0">
         <h2 class="text-3xl font-semibold drop-shadow-lg mb-10 mt-6">
           Cutting-Edge Tools Every User will Appreciate
         </h2>
         <AppGraphic
-          class="max-w-[90%] w-[909px] -mb-[60px] mx-auto opacity-90"
+          class="w-full md:max-w-[90%] -mb-[60px] mx-auto opacity-90"
         />
       </div>
     </section>
