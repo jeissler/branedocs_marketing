@@ -2,15 +2,18 @@
   <header
     class="fixed top-0 left-0 w-full text-white bg-black bg-opacity-60 backdrop-blur-md p-4 z-50"
   >
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <NuxtLink to="/" class="flex items-center text-cyan-400 relative">
+    <div class="max-w-7xl mx-auto md:flex justify-between items-center">
+      <NuxtLink
+        to="/"
+        class="flex items-center justify-center text-cyan-400 relative mb-3 md:mb-0"
+      >
         <Logo class="icon w-8 h-8 mr-1" />
         <div class="flex text-xl mt-2">
           branedocs<span class="block text-base font-light">&trade;</span>
         </div>
         <span class="tooltip">where interactions shape reality</span>
       </NuxtLink>
-      <nav>
+      <nav class="text-center">
         <NuxtLink to="/#about" class="mx-4 hover:text-cyan-400 transition">
           about
         </NuxtLink>
