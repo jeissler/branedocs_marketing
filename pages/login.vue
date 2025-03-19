@@ -1,9 +1,9 @@
 <template>
   <main
-    class="bg-gradient-1 flex min-h-screen flex-col justify-center py-12 sm:px-6 lg:px-8"
+    class="bg-gradient-1 flex min-h-screen flex-col justify-center py-12 px-6"
   >
     <div class="mt-20 sm:mx-auto sm:w-full sm:max-w-[480px] relative z-10">
-      <div class="bg-white px-6 py-12 shadow-sm sm:rounded-lg sm:px-12">
+      <div class="bg-white px-6 py-12 shadow-sm rounded-lg sm:px-12">
         <p
           v-if="submitted"
           class="text-sm/6 text-white py-2 px-3 mb-3 rounded-lg bg-red-600"

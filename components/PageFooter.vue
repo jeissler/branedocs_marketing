@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="py-2 text-white bg-black bg-opacity-80 text-right text-sm font-light relative z-50"
+    class="p-2 text-white bg-black bg-opacity-80 text-right text-sm font-light relative z-50"
   >
     <div class="max-w-7xl mx-auto flex justify-between items-center">
       <a

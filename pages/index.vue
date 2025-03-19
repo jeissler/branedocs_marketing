@@ -59,9 +59,9 @@
     <!-- App -->
     <section
       id="features"
-      class="bg-gradient-1 min-h-screen flex flex-col justify-center items-center text-center px-6 pt-[70px]"
+      class="bg-gradient-1 min-h-screen overflow-hidden flex flex-col justify-center items-center text-center px-6 pt-[70px]"
     >
-      <div class="relative overflow-hidden z-10 bottom-0">
+      <div class="relative z-10 bottom-0">
         <h2 class="text-3xl font-semibold drop-shadow-lg mb-10 mt-6">
           Cutting-Edge Tools Every User will Appreciate
         </h2>
