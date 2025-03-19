@@ -65,9 +65,7 @@
         <h2 class="text-3xl font-semibold drop-shadow-lg mb-10 mt-6">
           Cutting-Edge Tools Every User will Appreciate
         </h2>
-        <AppGraphic
-          class="w-full md:max-w-[90%] -mb-[60px] mx-auto opacity-90"
-        />
+        <AppGraphic class="w-full -mb-[60px] mx-auto opacity-90" />
       </div>
     </section>
 
