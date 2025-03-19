@@ -25,7 +25,7 @@
         </NuxtLink>
         <NuxtLink
           to="/login"
-          class="mx-4 py-2 px-3 text-sm bg-purple-700 hover:bg-purple-900 transition rounded-xl"
+          class="mx-4 py-2 px-3 text-sm bg-purple-700 hover:bg-purple-900 transition rounded-xl whitespace-nowrap"
         >
           sign in
         </NuxtLink>
