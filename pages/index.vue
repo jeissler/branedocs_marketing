@@ -82,28 +82,28 @@
     >
       <div class="relative z-10">
         <div class="max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6 text-black">
-          <article class="p-6 bg-white bg-opacity-80 rounded-lg relative z-10">
+          <article class="p-6 bg-white/80 rounded-lg relative z-10">
             <h3 class="text-xl font-semibold">🚀 Speed & Performance</h3>
             <p class="font-light mt-2">
               Blazing fast technology that keeps up with your needs. Tiny 3kb
               library optimimzed for parallel processing in any language.
             </p>
           </article>
-          <article class="p-6 bg-white bg-opacity-80 rounded-lg relative z-10">
+          <article class="p-6 bg-white/80 rounded-lg relative z-10">
             <h3 class="text-xl font-semibold">🔮 AI-Powered Innovation</h3>
             <p class="font-light mt-2">
               Artificial intelligence tailored for seamless experiences. Using
               the latest breakthroughs experience automagic updates.
             </p>
           </article>
-          <article class="p-6 bg-white bg-opacity-80 rounded-lg relative z-10">
+          <article class="p-6 bg-white/80 rounded-lg relative z-10">
             <h3 class="text-xl font-semibold">👁️ Accessibility Focused</h3>
             <p class="font-light mt-2">
               Designed with inclusivity in mind, offering features like voice
               navigation, screen reader compatibility, and high-contrast modes.
             </p>
           </article>
-          <article class="p-6 bg-white bg-opacity-80 rounded-lg">
+          <article class="p-6 bg-white/80 rounded-lg">
             <h3 class="text-xl font-semibold">📱 App Platform Integration</h3>
             <p class="font-light mt-2">
               Seamlessly integrates with major platforms like iOS, Android, and
