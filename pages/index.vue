@@ -65,12 +65,22 @@
         <h2 class="text-3xl font-semibold drop-shadow-lg mb-10 mt-6">
           Cutting-Edge Tools Every User will Appreciate
         </h2>
-        <div
-          class="max-w-sm rounded-xl overflow-hidden shadow-2xl -mb-[60px] mx-auto"
-        >
-          <img
-            src="../assets/app.png"
-            alt="branedocs app sidebar showing user actions"
+        <div class="max-w-sm -mb-[60px] mx-auto relative">
+          <!--<div class="absolute top-[15%] -left-7">
+            <p class="absolute right-0 text-white">contetn</p>
+            <div
+              class="bg-fuchsia-500/80 border-2 border-fuchsia-800 rounded-full w-10 h-10"
+            />
+          </div>-->
+          <div class="rounded-xl overflow-hidden shadow-2xl relative z-1">
+            <img
+              src="../assets/app.png"
+              alt="branedocs app sidebar showing user actions with ai chat"
+            />
+          </div>
+          <div
+            class="absolute top-3 left-3 rounded-xl border-white border-2 h-full w-full"
+            aria-hidden="true"
           />
         </div>
       </div>
