@@ -65,7 +65,14 @@
         <h2 class="text-3xl font-semibold drop-shadow-lg mb-10 mt-6">
           Cutting-Edge Tools Every User will Appreciate
         </h2>
-        <AppGraphic class="w-full -mb-[60px] mx-auto opacity-90" />
+        <div
+          class="max-w-sm rounded-xl overflow-hidden shadow-2xl -mb-[60px] mx-auto"
+        >
+          <img
+            src="../assets/app.png"
+            alt="branedocs app sidebar showing user actions"
+          />
+        </div>
       </div>
     </section>
 
@@ -126,7 +133,6 @@
 </template>
 
 <script setup>
-import AppGraphic from "~/assets/app.svg";
 useHead({
   title: "Intelligent Accessability Tools",
   meta: [
