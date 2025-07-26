@@ -9,7 +9,7 @@ It introduces the product, conveys its key features, and helps drive early user 
 
 - **Smart widget** embedded directly in your app for contextual documentation
 - **AI-driven search and assistance** for natural language queries
-- Tailored content surfaced automatically based on user context and behavior
+- **Tailored content** surfaced automatically based on user context and behavior
 
 ## 🛠 Tech Stack
 
@@ -44,4 +44,4 @@ BraneDocs is a next-gen documentation platform designed to:
 
 ## 💡 Development Notes
 
-While the full platform is under active development in private repos, this site offers a glimpse of the product vision. Feel free to watch the repo for updates.
+While the full platform is under active development in private repos, this site offers a glimpse of the product vision. Feel free to request a tour of the private codebase and/or example demos.
