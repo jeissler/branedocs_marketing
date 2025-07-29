@@ -61,15 +61,6 @@
     >
       Connect
     </button>
-
-    <div aria-hidden="true" style="position: absolute; left: -5000px">
-      <input
-        type="text"
-        name="b_85dea89be3f7652bad0d8acce_aeba25f7cc"
-        tabindex="-1"
-        value=""
-      />
-    </div>
   </form>
   <template v-else>
     <p class="text-center text-xl">
@@ -89,13 +80,13 @@
 import axios from "axios";
 const submitted = ref(false);
 
-function submitForm({ target }) {
+async function submitForm({ target }) {
   try {
     const formData = new FormData(target);
     // encode data for netlify forms
     const encodedData = new URLSearchParams(formData).toString();
 
-    axios.post("/", encodedData, {
+    await axios.post("/", encodedData, {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
     });
 
